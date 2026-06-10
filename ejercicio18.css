@@ -1,0 +1,31 @@
+/* Grilla principal (el contenedor general) */
+.pagina {
+  display: grid;
+  grid-template-rows: auto auto auto auto; /* cab, hero, cuerpo, pie */
+  gap: 20px;
+}
+
+/* Header: logo a la izquierda, menú a la derecha */
+.cab {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+}
+
+/* Hero section grande */
+.hero {
+  min-height: 200px; /* Para darle el aspecto "grande" */
+}
+
+/* Contenido en dos columnas: artículo 70% y sidebar 30% */
+.cuerpo {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 15px;
+}
+
+/* Footer con tres columnas iguales */
+.pie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
