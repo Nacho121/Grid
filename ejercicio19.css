@@ -1,0 +1,19 @@
+/* Contenedor del calendario con 7 columnas */
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Estilo para los títulos de los días (primera fila) */
+.dia-titulo {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Celdas de los días con proporción cuadrada (1:1) */
+.dia {
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center; /* Centra el número del día de forma simple */
+}
