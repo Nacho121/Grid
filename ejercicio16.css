@@ -1,0 +1,18 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "head head head head"
+    "side w1   w2   w3"
+    "side grafico grafico grafico"
+    "foot foot foot foot";
+}
+
+.head { grid-area: head; }
+.side { grid-area: side; }
+.w1 { grid-area: w1; }
+.w2 { grid-area: w2; }
+.w3 { grid-area: w3; }
+.grafico { grid-area: grafico; }
+.foot { grid-area: foot; }
