@@ -1,0 +1,15 @@
+.revista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px; /* Un pequeño espacio opcional para separar las celdas */
+}
+
+.destacado {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.pie {
+  grid-column: span 4;
+}
