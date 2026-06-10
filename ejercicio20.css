@@ -1,0 +1,13 @@
+/* Contenedor principal con 3 columnas (una para cada plan) */
+.precios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Cada tarjeta de plan se convierte en una sub-grilla vertical */
+.plan {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 10px; /* Espaciado entre los elementos internos del plan */
+}
